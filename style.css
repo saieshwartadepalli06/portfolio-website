@@ -1,0 +1,167 @@
+/* Custom CSS for Portfolio Website */
+
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light grey background for the whole page */
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Container Padding */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Section Styles */
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 0;
+    border: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Ensure that the sections are side by side */
+#skills-education-experience .row > div {
+    display: flex;
+    align-items: stretch; /* This will make sure that all cards are of equal height */
+  }
+
+/* Custom Icon Sizes */
+
+/* Skills Icon */
+.skills-icon {
+    width: 40px; /* Custom width for the skills icon */
+    height: 40px; /* Custom height for the skills icon */
+    /* Other styles are inherited from .card-icon */
+}
+
+/* Education Icon */
+.education-icon {
+    width: 75px; /* Custom width for the education icon */
+    height: 75px; /* Custom height for the education icon */
+    /* Other styles are inherited from .card-icon */
+}
+
+/* Experience Icon */
+.experience-icon {
+    width: 65px; /* Custom width for the experience icon */
+    height: 65px; /* Custom height for the experience icon */
+    /* Other styles are inherited from .card-icon */
+}
+
+/* Base Icon Styles */
+.card-icon {
+    margin: 0 auto 1rem auto; /* Centers the icon and adds space below */
+    display: block; /* Ensures the img element is treated as a block-level element */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .card-icon {
+        width: 60px; /* Further reduced icon size for mobile */
+        height: 60px;
+    }
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container size */
+    height: auto;
+}
+
+/* Card Icon */
+.card-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  /* Section Padding */
+  .section-padding {
+    padding: 60px 0; /* Adjust the padding to your preference */
+  }
+  
+  /* Card Centering */
+  .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
